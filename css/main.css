@@ -8,28 +8,23 @@ border-radius: 4px;
     transform: scale(1.05); 
 }
 
-nav {
-    display: flex;
-    flex-direction
-}
-
 #wrapper {
-    display:grid;
+    display: grid;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: whitesmoke;
     height: 90vh;
     width: 60vh;
     margin: 0 auto;
     zoom: 175%;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 1fr 2fr 2fr;
     grid-column-gap: 4px;
     grid-row-gap: 4px;
     grid-template-areas:
+    'hd hd hd'
     'nav nav nav'
     'main main main'
 }
-
 
 header {
     grid-area: hd;
@@ -38,8 +33,12 @@ header {
 
 nav {
     grid-area: nav;
-    background: rgb(49, 49, 69);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
 }
+
 
 aside {
     grid-area: as;
