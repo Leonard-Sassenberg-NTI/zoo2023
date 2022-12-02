@@ -1,5 +1,5 @@
 
-{ transition: all .1s ease-in-out;
+div { transition: all .1s ease-in-out;
 padding: 2px 4px;
 border-radius: 4px;
 }
@@ -8,7 +8,11 @@ border-radius: 4px;
     transform: scale(1.05); 
 }
 
-#container {
+nav {
+
+}
+
+#wrapper {
     display:grid;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: whitesmoke;
@@ -16,17 +20,13 @@ border-radius: 4px;
     width: 60vh;
     margin: 0 auto;
     zoom: 175%;
-    grid-template-columns:;
-    grid-template-rows:;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 4px;
     grid-row-gap: 4px;
     grid-template-areas:
-    'hd hd'
-    'nav nav'
-    'as mn1'
-    'as mn2'
-    'as mn3'
-    'ft ft'
+    'nav nav nav'
+    'main main main'
 }
 
 
