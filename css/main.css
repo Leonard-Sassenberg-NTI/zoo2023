@@ -1,5 +1,5 @@
 
-div { transition: all .1s ease-in-out;
+ { transition: all .1s ease-in-out;
 padding: 2px 4px;
 border-radius: 4px;
 }
@@ -12,18 +12,17 @@ border-radius: 4px;
     display: grid;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: whitesmoke;
-    height: 90vh;
-    width: 60vh;
+    height: 95vh;
     margin: 0 auto;
-    zoom: 175%;
+    zoom: 100%;
     grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 0.75fr 0.2fr 2fr;
     grid-column-gap: 4px;
     grid-row-gap: 4px;
     grid-template-areas:
     'hd hd hd'
     'nav nav nav'
-    'main main main'
+    'mn mn mn'
 }
 
 header {
@@ -31,36 +30,17 @@ header {
     background: rgb(9, 31, 57);
 }
 
+
+footer {
+    grid-area: mn;
+    background: rgb(116, 173, 202);
+}
+
 nav {
     grid-area: nav;
+    background: rgb(96, 199, 191);
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: space-evenly;
-}
-
-
-aside {
-    grid-area: as;
-    background: rgb(63, 68, 88);
-}
-
-.n1 {
-    grid-area: mn1;
-    background: rgb(142, 168, 168);
-}
-
-.n2 {
-    grid-area: mn2;
-    background: rgb(142, 168, 168);
-}
-
-.n3 {
-    grid-area: mn3;
-    background: rgb(142, 168, 168);
-}
-
-footer {
-    grid-area: ft;
-    background: rgb(9, 31, 57);
 }
